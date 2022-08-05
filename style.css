@@ -1,0 +1,78 @@
+*{
+
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sheet{
+
+    background-color: white;
+    width: 1000px;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow:inset 0px 10px 12px rgba(2, 2, 2, 0.532);
+}
+.box{
+
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 100px;
+    box-shadow: inset 10px 5px 2px rgba(255, 255, 255, 0.349),
+                        5px 5px 12px black;
+
+    animation: boxanime;
+    animation-duration:2s;
+    animation-delay: 1s;
+    transition: .5s;
+}
+@keyframes boxanime{
+    from{
+        border-radius: 0;
+        background-color: blue;
+    }
+
+    to{
+        background-color: red;
+        border-radius: 100px;
+    }
+}
+.buttons{
+    
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow:inset 0px 10px 12px rgba(2, 2, 2, 0.358);
+
+}
+button:active{
+
+    background-color: red;
+}
+
+
+
+
+
+
